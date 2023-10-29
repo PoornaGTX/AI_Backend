@@ -33,7 +33,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 app.use(
   cors({
-    origin: ['https://safesrilankaai.onrender.com'],
+    origin: ['https://www.slforecastai.com'],
   })
 );
 
