@@ -33,8 +33,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 app.use(
   cors({
-    origin: 'https://safesrilankaai.onrender.com/',
-    credentials: true,
+    origin: ['https://safesrilankaai.onrender.com'],
   })
 );
 
