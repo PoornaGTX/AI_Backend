@@ -1,13 +1,13 @@
 {
   "name": "mern-project",
   "version": "1.0.0",
-  "description": "Project in Action - [Jobify](https://www.jobify.live/)",
+  "description": "AI_Project",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "server": "nodemon server --ignore client",
+    "start": "node server.js",
     "client": "npm start --prefix client",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "app": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
