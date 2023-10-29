@@ -31,7 +31,13 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'));
 }
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ['https://safesrilankaai.onrender.com'],
+    methods: ['POST', 'GET', 'PATCH', 'DELETE'],
+  })
+);
+
 app.use(express.json());
 app.use(helmet());
 app.use(xss());
