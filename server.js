@@ -30,9 +30,13 @@ const port = process.env.PORT || 5000;
 if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'));
 }
-app.use(express.json());
 
-app.use(cors());
+app.use(
+  cors({
+    origin: 'https://safesrilankaai.onrender.com/',
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 app.use(helmet());
